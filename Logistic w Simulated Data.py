@@ -28,7 +28,7 @@ def sigmoid(a):
 np.random.seed(2020)
 mu = 0
 sigma = 1
-X = np.random.normal(mu,sigma,size=(50,4)) # make low rank X instead?
+X = np.random.normal(mu,sigma,size=(50,4)) #Can make low rank also by using sklearn 
 vec_1 = np.ones([50,1])
 X = np.concatenate((vec_1,X),axis = 1)
 m = X.shape[0]
